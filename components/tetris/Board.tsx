@@ -50,24 +50,6 @@ export function renderBoard(
   return Array.from({ length: rows }, () => Array<Cell>(cols).fill(null));
 }
 
-export function placePiece(
-  matrix: BoardMatrix,
-  shape: boolean[][],
-  piece: PieceType,
-  originRow: number,
-  originCol: number,
-): BoardMatrix {
-  const next = matrix.map(row => [...row]);
-  shape.forEach((row, r) =>
-    row.forEach((filled, c) => {
-      if (filled) {
-        next[originRow + r][originCol + c] = piece;
-      }
-    }),
-  );
-  return next;
-}
-
 const styles = StyleSheet.create({
   board: {
     backgroundColor: '#0f172a',

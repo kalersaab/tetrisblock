@@ -12,6 +12,9 @@
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8651281C9406A48916DFDB60 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		A1B2C3D4E5F60718293A4B5D /* NativeTetrisModuleProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* NativeTetrisModuleProvider.mm */; };
+		A1B2C3D4E5F60718293A4B5F /* NativeTetrisModule.cc in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5E /* NativeTetrisModule.cc */; };
+		A1B2C3D4E5F60718293A4B61 /* tetris.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B60 /* tetris.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-tetrisblock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tetrisblock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = tetrisblock/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = tetrisblock/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B5C /* NativeTetrisModuleProvider.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = NativeTetrisModuleProvider.mm; path = tetrisblock/NativeTetrisModuleProvider.mm; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B5E /* NativeTetrisModule.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NativeTetrisModule.cc; path = ../shared/NativeTetrisModule.cc; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B60 /* tetris.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tetris.cpp; path = ../shared/tetris/tetris.cpp; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -44,6 +50,9 @@
 			children = (
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				A1B2C3D4E5F60718293A4B5C /* NativeTetrisModuleProvider.mm */,
+				A1B2C3D4E5F60718293A4B5E /* NativeTetrisModule.cc */,
+				A1B2C3D4E5F60718293A4B60 /* tetris.cpp */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
@@ -247,6 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5D /* NativeTetrisModuleProvider.mm in Sources */,
+				A1B2C3D4E5F60718293A4B5F /* NativeTetrisModule.cc in Sources */,
+				A1B2C3D4E5F60718293A4B61 /* tetris.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

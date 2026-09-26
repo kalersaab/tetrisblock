@@ -33,6 +33,7 @@
 #include <autolinking.h>
 #include <fbjni/fbjni.h>
 #include <react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h>
+#include "NativeTetrisModule.h"
 
 #ifdef REACT_NATIVE_APP_CODEGEN_HEADER
 #include REACT_NATIVE_APP_CODEGEN_HEADER
@@ -63,13 +64,9 @@ void registerComponents(
 std::shared_ptr<TurboModule> cxxModuleProvider(
     const std::string& name,
     const std::shared_ptr<CallInvoker>& jsInvoker) {
-  // Here you can provide your CXX Turbo Modules coming from
-  // either your application or from external libraries. The approach to follow
-  // is similar to the following (for a module called `NativeCxxModuleExample`):
-  //
-  // if (name == NativeCxxModuleExample::kModuleName) {
-  //   return std::make_shared<NativeCxxModuleExample>(jsInvoker);
-  // }
+  if (name == NativeTetrisModule::kModuleName) {
+    return std::make_shared<NativeTetrisModule>(jsInvoker);
+  }
 
   // And we fallback to the CXX module providers autolinked
   return autolinking_cxxModuleProvider(name, jsInvoker);
